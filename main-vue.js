@@ -34,7 +34,12 @@ const app = createApp({
     },
 
     methods:{
-
+        goNext(){
+            this.currentIndex++;
+        },
+        goPrev(){
+            this.currentIndex--;
+        }
     } 
 
 })

@@ -19,7 +19,7 @@
     
         <div id="carousel">
            
-            <i class="bi bi-caret-up-fill" id="prev"></i>
+            <i class="bi bi-caret-up-fill" id="prev"  @click="goPrev()"></i>
             
             <div class="gallery ">
                 <figure v-for="(pic, i) in pictures" v-show="currentIndex === i">
@@ -30,7 +30,7 @@
                 </figcaption>
                 </figure>
             </div>
-            <i class="bi bi-caret-down-fill" id="next"></i>
+            <i class="bi bi-caret-down-fill" id="next" @click="goNext()"></i>
         </div>
     </div>
     
