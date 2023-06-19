@@ -31,7 +31,11 @@ const app = createApp({
             ]
            
         }
-    }
+    },
+
+    methods:{
+
+    } 
 
 })
 

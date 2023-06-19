@@ -16,9 +16,9 @@
     position: relative;
 }
 
-#carousel img.active{
+ #carousel img.active{
     display: block;
-}
+} 
 
 #carousel .bi{
     position: absolute;

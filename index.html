@@ -27,7 +27,7 @@
             <i class="bi bi-caret-up-fill" id="prev"></i>
             
             <div class="gallery ">
-             
+                <img v-for="(pic, i) in pictures" v-show="currentIndex === i" :src="pic.image" :alt="pic.title">
             </div>
             <i class="bi bi-caret-down-fill" id="next"></i>
         </div>

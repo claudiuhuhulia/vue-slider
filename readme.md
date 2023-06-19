@@ -10,3 +10,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 - Inseriamo l'array di oggetti in *data*.
 - Richiamiamo il metodo *mount* e colleghiamo la function precedentemente estrapolata all'elemento del DOM.
 - Dichiariamo *currentIndex* che sarà l'index number sul quale gireranno le immagini. 
+- Inseriamo le immagini dinamicamente utilizzando un **v-for** nel DOM.
