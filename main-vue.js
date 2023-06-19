@@ -35,7 +35,7 @@ const app = createApp({
 
     methods:{
         goNext(){
-            if(isLast)
+            if(this.isLast)
             {this.currentIndex = 0}
             
             this.currentIndex++;
