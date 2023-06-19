@@ -1,0 +1,54 @@
+#carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     display: none; 
+}
+
+#carousel .gallery{
+    height: 100%;
+}
+
+#carousel{
+    height: 450px;
+    width: 1000px;
+    margin: 120px auto;
+    position: relative;
+}
+
+#carousel img.active{
+    display: block;
+}
+
+#carousel .bi{
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prev{
+    top: -10px;
+}
+#next{
+    bottom: -10px;
+}
+.thumbnails img{
+    object-fit: cover;
+    z-index: 1;
+    height:  calc(100% / 5);
+    filter: brightness(30%);
+
+}
+
+.thumbnails{
+    width: 350px;
+    position: absolute;
+    height: 450px;
+}
+
+.thumbnails img.active{
+    filter: none;
+    border: 2px solid white;
+}
