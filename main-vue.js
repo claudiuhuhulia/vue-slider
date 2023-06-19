@@ -5,6 +5,7 @@ const {createApp} = Vue;
 const app = createApp({
     data(){
         return{
+            autoPlay: null,
             currentIndex: 0,
             pictures: [
                 {
@@ -50,6 +51,12 @@ const app = createApp({
         },
         setCurrentIndex(targetIndex){
             this.currentIndex = targetIndex
+        },
+        stopAutoPlay(){
+            clearInterval(this.autoPlay)
+        },
+        startAutoPlay(){
+            this.autoPlay = setInterval(this.goNext, 2000)
         }
     },
     computed:{
@@ -59,6 +66,11 @@ const app = createApp({
         isFirst(){
             return this.currentIndex === 0
         }
+    },
+     
+    mounted(){
+       this.autoPlay = setInterval(this.goNext, 2000)
+
     }
 
 })

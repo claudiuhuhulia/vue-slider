@@ -18,3 +18,6 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 - Creiamo le flag function per identificare quando siamo alla prima e all'ultima immagine  e le usiamo per modificare il current index creando un ciclo infinito.
 - Creiamo una function in methods che modifi il *CurrentIndex* a seconda del parametro inserito.
 - al click della thumbnail chiamiamo la function precedentemente creata e le diamo come parametro l'index number dell'array, cosicchè venga modificato il *currentIndex* e avremo come immagine principale quella appena clickata.
+- Utilizziamo il metodo **mounted** per creare un **setInterval** che cambi immagine dopo 2 secondi.
+- Creiamo una variabile *autoPlay* che utilizzeremo per interrompere la timing function con il **clearInterval** al hover del mouse sulle thumbnails.
+- Creiamo 2 function in methods che serviranno rispettivamente a fermare la timing function e a farla ripartire, le andiamo a inserire nelle thumbnails del DOM con il **mouseenter** e il **mouseleave**. 

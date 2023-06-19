@@ -14,7 +14,7 @@
 <body>
     <div id="root" class="container">
         <div class="thumbnails d-flex flex-column">
-            <img v-for="(pic, i) in pictures"  :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i }" @click="setCurrentIndex(i)">
+            <img v-for="(pic, i) in pictures"  :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i }" @click="setCurrentIndex(i)" @:mouseenter="stopAutoPlay" @mouseleave="startAutoPlay">
           </div>
     
         <div id="carousel">
