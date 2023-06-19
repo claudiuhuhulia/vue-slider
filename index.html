@@ -14,12 +14,7 @@
 <body>
     <div id="root" class="container">
         <div class="thumbnails d-flex flex-column">
-            <img src="img/01.webp" alt="01">
-            <img src="img/02.webp" alt="02">
-            <img src="img/03.webp" alt="03">
-            <img src="img/04.webp" alt="04">
-            <img src="img/05.webp" alt="05">
-
+            <img v-for="(pic, i) in pictures"  :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i }">
           </div>
     
         <div id="carousel">
@@ -27,7 +22,13 @@
             <i class="bi bi-caret-up-fill" id="prev"></i>
             
             <div class="gallery ">
-                <img v-for="(pic, i) in pictures" v-show="currentIndex === i" :src="pic.image" :alt="pic.title">
+                <figure v-for="(pic, i) in pictures" v-show="currentIndex === i">
+                    <img :src="pic.image" :alt="pic.title">
+                <figcaption>
+                    <h2>{{pic.title}}</h2>
+                    <p>{{pic.text}}</p>
+                </figcaption>
+                </figure>
             </div>
             <i class="bi bi-caret-down-fill" id="next"></i>
         </div>
