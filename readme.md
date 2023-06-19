@@ -14,3 +14,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 - Cancelliamo l'attributo *display:none* dal css per inserirlo dinamicamente usando il metodo **v-show** di Vue e rendiamo la prima immagine attiva collegando l'index number dell'array all currendIndex.
 - Rendo dinamica la classe delle thumbanails, inserisco all'interno delle graffe un oggetto che abbia come chiave la classe che verra aggiunta e nel valore la condizione affinchè la classe sia aggiunta(ovvero, la thumbnail attiva sarà quella che avra lo stesso index number del currentIndex).
 - Stampiamo in pagina i relativi titoli e le relative descrizioni ritoccando il css e rendendole dinamiche usando la sintassi *mustache*. 
+- Utilizziamo la sintassi **@click** per gestire i bottoni prev e next e creiamo le relative funzioni.

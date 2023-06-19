@@ -35,12 +35,20 @@ const app = createApp({
 
     methods:{
         goNext(){
+            if(isLast)
+            {this.currentIndex = 0}
+            
             this.currentIndex++;
         },
         goPrev(){
             this.currentIndex--;
         }
-    } 
+    },
+    computed:{
+        isLast(){
+            return this.currentIndex === this.pictures.lenght - 1 
+        }
+    }
 
 })
 
